@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            text-align: center;
+        }
+        button{
+            background-color: black;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+       <!-- $$$$$$$$$$$$$ get value from input and set in html  $$$$$$$$$$$$$$$ -->
+       <h1>Add Value to Constructor function</h1>
+       <div >
+        <label for="firstInp">Name</label>
+        <input type="text" onfocus="this.value=''" id="firstInp" />
+        <label for="secondInp">Age</label>
+        <input type="number" onfocus="this.value=''" id="secondInp" />
+        <label for="thirdInp">Contact_No</label>
+        <input type="number" onfocus="this.value=''" id="thirdInp" />
+  
+        <button onclick="addData();">Write</button>
+      </div>
+      <div>
+      <ol id="res"></ol>
+      <button onclick="remove()">Remove</button>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
